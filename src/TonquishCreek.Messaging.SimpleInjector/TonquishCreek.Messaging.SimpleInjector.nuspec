@@ -1,0 +1,19 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <title>$description$</title>
+    <version>$version$</version>
+    <description>$description$</description>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <copyright>$copyright$</copyright>
+    <projectUrl>https://github.com/tonquish-creek/messaging</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes></releaseNotes>
+    <tags>Messaging</tags>
+    <dependencies>
+      <dependency id="TonquishCreek.Messaging" version="$version$" />
+    </dependencies>
+  </metadata>
+</package>

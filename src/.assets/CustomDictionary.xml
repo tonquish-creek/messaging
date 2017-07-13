@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    This file is used in conjunction with the Visual Studio Code Analysis tool.
+    
+    NOTE: This file must have its BuildAction set to CodeAnalysisDictionary!
+-->
+<Dictionary>
+  <!--
+        One aspect of the code analysis performed by Visual Studio 2008 are new naming policies.
+        Identifiers are comparied to these rules and an error will be generated when the name of an externally visible identifier contains one or more words that are not recognized by the Microsoft spelling checker library.
+        These rules does not check constructors or special-named members such as get and set property accessors.
+        
+        These rules parses the identifier into tokens and checks the spelling of each token.
+        The parsing algorithm performs the following transformations: 
+
+          * Capital letters start a new token. For example, MyNameIsJoe tokenizes to "My", "Name", "Is", "Joe".
+          * For multiple capital letters, the last capital letter starts a new token. For example, GUIEditor tokenizes to "GUI", "Editor".
+          * Leading and trailing apostrophes are removed. For example, 'sender' tokenizes to "sender".
+          * Underscores signify the end of a token and are removed. For example, Hello_world tokenizes to "Hello", "world".
+          * Embedded ampersands are removed. For example, for&mat tokenizes to "format".
+
+        (The English (en) version of the spelling checker is used by default.)
+
+        To fix a violation of this rule, correct the spelling of the word or add the word to a custom dictionary named CustomDictionary.xml.
+
+          * Add words that should not cause a violation under the Dictionary/Words/Recognized path.
+          * Add words that should cause a violation under the Dictionary/Words/Unrecognized path.
+          * Add words that should be flagged as obsolete under the Dictionary/Words/Deprecated path.
+          * Add exceptions to the acronym casing rules to the Dictionary/Acronyms/CasingExceptions path.
+
+  -->
+  <Words>
+    <Compound>
+      <!-- 
+        This is a list of discrete terms with their compound alternates and is used by CompoundWordsShouldBeCasedCorrectly.
+        These are words that exist in the dictionary as discrete terms, however, should actually be cased as compound words.
+        For example, 'Filename' exists in the dictionary and hence the spelling rules will not see it as unrecognized but its actual preferred usage is 'FileName'; adding it below causes CompoundWordsShouldBeCasedCorrectly to fire.
+        The discrete terms are case-insensitive, however, be sure to pascal-case the compound alternates.
+        Any discrete terms added below automatically get added to the list of discrete exceptions to prevent CompoundWordsShouldBeCasedCorrectly from firing both on the compound word (for example 'WhiteSpace') and its discrete alternate (for example 'Whitespace').
+
+        <Term CompoundAlternate="abc">abc</Term>
+      -->
+      <Term ComponetAlternate="connectionString">ConnectionString</Term>
+    </Compound>
+    <Unrecognized>
+      <!-- 
+        This is a list of case-insensitive words that exist in the dictionary but you do not want to be recognized by IdentifiersShouldBeSpelledCorrectly.
+        Do not add deprecated terms to this list, instead add these to the <Deprecated> section below.
+      -->
+      <!--
+      <Word>abb</Word>
+      -->
+    </Unrecognized>
+    <Recognized>
+      <!--
+        This is a list of case-insensitive words that do not exist in the dictionary but you still want to be considered as recognized by IdentifiersShouldBeSpelledCorrectly.
+        Do not add compound words (e.g. 'FileName') to this list as this will cause CompoundWordsShouldBeBeCasedCorrectly to fire on usages of the compound word stating that they should be changed to their discrete equivalent (for example 'FileName' -> 'Filename').
+      -->
+      <Word>api</Word>
+      <Word>autofac</Word>
+      <Word>tonquish</Word>
+    </Recognized>
+    <Deprecated>
+      <!-- 
+        This is a list of deprecated terms with their preferred alternates and is used by UsePreferredTerms.
+        The deprecated terms are case-insensitive, however, make sure to pascal-case the preferred alternates.
+        If a word does not have a preferred alternate, simply leave it blank.                                           
+      -->
+      <Term PreferredAlternate="EnterpriseServices">complus</Term>
+    </Deprecated>
+    <DiscreteExceptions>
+      <!--
+        This is a list of case-insensitive exceptions to the CompoundWordsShouldBeCasedCorrectly discrete term check.
+        As this check works solely on the basis of whether two consecutive tokens exists in the dictionary, it can have a high false positive rate.
+        For example, 'onset' exists in the dictionary but the user probably intended it to be 'OnSet'.
+        Adding this word below prevents this rule from firing telling the user to change 'OnSet' to 'Onset'.
+      -->
+      <Term>mvc</Term>
+    </DiscreteExceptions>
+  </Words>
+  <Acronyms>
+    <CasingExceptions>
+      <!--  Put any exceptions to the acronym casing rules in this list.
+      
+            This section addresses:
+            - CA1709: Identifiers should be cased correctly
+            
+            Acronyms in this section are case-sensitive and should be specified the way they appear in code.
+      -->
+      <Acronym>CQRS</Acronym>
+    </CasingExceptions>
+  </Acronyms>
+</Dictionary>

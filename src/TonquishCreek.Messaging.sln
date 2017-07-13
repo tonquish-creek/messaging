@@ -1,0 +1,88 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".assets", ".assets", "{D25B8713-DCEF-4B67-AD47-E63AE563B5ED}"
+	ProjectSection(SolutionItems) = preProject
+		.assets\CustomDictionary.xml = .assets\CustomDictionary.xml
+		.assets\SharedAssemblyInfo.cs = .assets\SharedAssemblyInfo.cs
+		.assets\SigningKey.snk = .assets\SigningKey.snk
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{719989CA-46BC-4D29-A91F-7310A3260FFC}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+		.nuget\Update NuGet.bat = .nuget\Update NuGet.bat
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{2C6E689D-16AD-4F85-9113-08EEB1F99ABC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TonquishCreek.Messaging", "TonquishCreek.Messaging\TonquishCreek.Messaging.csproj", "{DF830E82-53EA-40C3-B321-4822BAF29559}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TonquishCreek.Messaging.Tests", "TonquishCreek.Messaging.Tests\TonquishCreek.Messaging.Tests.csproj", "{12A8EEFA-9D77-4085-B80F-FE23AF46F26D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions", "Extensions", "{6C0FFC9E-10A6-4B8A-9C09-657A9D0DE094}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Autofac", "Autofac", "{2417C3B9-481E-4662-A3A0-84403B4040A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Castle Windsor", "Castle Windsor", "{3CEF2618-961C-4133-97DB-85B27219AE19}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Simple Injector", "Simple Injector", "{C7D3DE7C-84B5-4001-99FE-AE222B8AD7BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TonquishCreek.Messaging.Autofac", "TonquishCreek.Messaging.Autofac\TonquishCreek.Messaging.Autofac.csproj", "{0B38116E-A8A0-4709-A41B-3CC2B6243BC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TonquishCreek.Messaging.SimpleInjector", "TonquishCreek.Messaging.SimpleInjector\TonquishCreek.Messaging.SimpleInjector.csproj", "{701935DE-FD8B-4500-8B8D-0A6492D5CB61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TonquishCreek.Messaging.SimpleInjector.Tests", "TonquishCreek.Messaging.SimpleInjector.Tests\TonquishCreek.Messaging.SimpleInjector.Tests.csproj", "{239135AA-0161-44D8-A9BA-A76C3041E471}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TonquishCreek.Messaging.Autofac.Tests", "TonquishCreek.Messaging.Autofac.Tests\TonquishCreek.Messaging.Autofac.Tests.csproj", "{1D2F2972-7ABD-4399-A9FD-B0FD16AD83D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF830E82-53EA-40C3-B321-4822BAF29559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF830E82-53EA-40C3-B321-4822BAF29559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF830E82-53EA-40C3-B321-4822BAF29559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF830E82-53EA-40C3-B321-4822BAF29559}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12A8EEFA-9D77-4085-B80F-FE23AF46F26D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12A8EEFA-9D77-4085-B80F-FE23AF46F26D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12A8EEFA-9D77-4085-B80F-FE23AF46F26D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12A8EEFA-9D77-4085-B80F-FE23AF46F26D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B38116E-A8A0-4709-A41B-3CC2B6243BC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B38116E-A8A0-4709-A41B-3CC2B6243BC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B38116E-A8A0-4709-A41B-3CC2B6243BC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B38116E-A8A0-4709-A41B-3CC2B6243BC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{701935DE-FD8B-4500-8B8D-0A6492D5CB61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{701935DE-FD8B-4500-8B8D-0A6492D5CB61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{701935DE-FD8B-4500-8B8D-0A6492D5CB61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{701935DE-FD8B-4500-8B8D-0A6492D5CB61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{239135AA-0161-44D8-A9BA-A76C3041E471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{239135AA-0161-44D8-A9BA-A76C3041E471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{239135AA-0161-44D8-A9BA-A76C3041E471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{239135AA-0161-44D8-A9BA-A76C3041E471}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D2F2972-7ABD-4399-A9FD-B0FD16AD83D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D2F2972-7ABD-4399-A9FD-B0FD16AD83D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D2F2972-7ABD-4399-A9FD-B0FD16AD83D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D2F2972-7ABD-4399-A9FD-B0FD16AD83D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DF830E82-53EA-40C3-B321-4822BAF29559} = {2C6E689D-16AD-4F85-9113-08EEB1F99ABC}
+		{12A8EEFA-9D77-4085-B80F-FE23AF46F26D} = {2C6E689D-16AD-4F85-9113-08EEB1F99ABC}
+		{2417C3B9-481E-4662-A3A0-84403B4040A8} = {6C0FFC9E-10A6-4B8A-9C09-657A9D0DE094}
+		{3CEF2618-961C-4133-97DB-85B27219AE19} = {6C0FFC9E-10A6-4B8A-9C09-657A9D0DE094}
+		{C7D3DE7C-84B5-4001-99FE-AE222B8AD7BB} = {6C0FFC9E-10A6-4B8A-9C09-657A9D0DE094}
+		{0B38116E-A8A0-4709-A41B-3CC2B6243BC9} = {2417C3B9-481E-4662-A3A0-84403B4040A8}
+		{701935DE-FD8B-4500-8B8D-0A6492D5CB61} = {C7D3DE7C-84B5-4001-99FE-AE222B8AD7BB}
+		{239135AA-0161-44D8-A9BA-A76C3041E471} = {C7D3DE7C-84B5-4001-99FE-AE222B8AD7BB}
+		{1D2F2972-7ABD-4399-A9FD-B0FD16AD83D2} = {2417C3B9-481E-4662-A3A0-84403B4040A8}
+	EndGlobalSection
+EndGlobal

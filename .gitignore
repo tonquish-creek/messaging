@@ -1,0 +1,10 @@
+.vs
+bin
+obj
+out
+packages
+testresults
+!nuget.exe
+*.suo
+*.user
+
